@@ -371,10 +371,17 @@ public class StudentActivity extends AppCompatActivity implements StudentPending
                 if (response.code() == 200)
                 {
                     Toast.makeText(StudentActivity.this, "Complaint completed", Toast.LENGTH_SHORT).show();
+
                     studentPendingInfos.clear();
                     createStudentPendingListData();
 //        studentPendingActivityAdapter.notifyDataSetChanged();
                     studentPendingActivityRecyclerView.setAdapter(studentPendingActivityAdapter);
+
+                    completedActivityInfos.clear();
+                    createCompletedListData();
+//                    completedActivityAdapter.notifyDataSetChanged();
+                    completedActivityRecyclerView.setAdapter(completedActivityAdapter);
+
                 }
                 else
                 {

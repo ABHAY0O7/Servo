@@ -75,7 +75,6 @@ public class CompletedRecyclerViewAdapter extends RecyclerView.Adapter<Completed
             ComplaintDate = itemView.findViewById(R.id.complaintDate);
             CompletedTime = itemView.findViewById(R.id.completedTime);
             CompletedDate = itemView.findViewById(R.id.compltedDate);
-            CompletedTime = itemView.findViewById(R.id.completedTime);
             CompletedType = itemView.findViewById(R.id.completedType);
             CompletedUid = itemView.findViewById(R.id.completedUid);
 

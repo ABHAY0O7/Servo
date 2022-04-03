@@ -9,12 +9,15 @@ public class NewComplaint {
     private String roll_number;
     private String room_number;
     private int student;
+    private String date_done;
 
 
 
     private String contact_number;
 
-    public NewComplaint(int id, String type, String description, String date_lodged, Boolean mark_done, String roll_number, String room_number, int student, String contact_number) {
+
+
+    public NewComplaint(int id, String type, String description, String date_lodged, Boolean mark_done, String roll_number, String room_number, int student, String date_done, String contact_number) {
         this.id = id;
         this.type = type;
         this.description = description;
@@ -23,7 +26,16 @@ public class NewComplaint {
         this.roll_number = roll_number;
         this.room_number = room_number;
         this.student = student;
+        this.date_done = date_done;
         this.contact_number = contact_number;
+    }
+
+    public String getDate_done() {
+        return date_done;
+    }
+
+    public void setDate_done(String date_done) {
+        this.date_done = date_done;
     }
 
     public String getContact_number() {

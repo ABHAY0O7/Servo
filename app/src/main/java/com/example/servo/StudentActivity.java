@@ -242,9 +242,12 @@ public class StudentActivity extends AppCompatActivity implements StudentPending
                             int id = newUser.get(i).getId();
                             String type = newUser.get(i).getType();
                             String DateLog = newUser.get(i).getDate_lodged();
+                            String compDateLog = newUser.get(i).getDate_done();
                             String date = DateLog.substring(0,10);
                             String time = DateLog.substring(11,16);
-                            CompletedActivityInfo completedActivityInfo = new CompletedActivityInfo(Integer.toString(id), type, date, time, "1/4/2022", "5:10 PM");
+                            String codate = compDateLog.substring(0,10);
+                            String cotime = compDateLog.substring(11,16);
+                            CompletedActivityInfo completedActivityInfo = new CompletedActivityInfo(Integer.toString(id), type, date, time, codate, cotime);
                             completedActivityInfos.add(completedActivityInfo);
 
 
